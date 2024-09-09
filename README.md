@@ -6,6 +6,7 @@ The Magic Mirror is designed to identify objects in real-time and provide the us
 My work is based off of an initial prototype created by another student, Tom Desrumeaux. His prototype has been included in this repository to keep a record of the progression of the application.
 
 UNDERSTANDING THE COMPONENTS
+
 IMPORTS:
 -	‘tkinter’: Provides the GUI framework
 -	‘PIL’ (Pillow): Used for image processing (converting OpenCV images to a format that ‘tkinter’ can display)
@@ -13,12 +14,15 @@ IMPORTS:
 -	‘numpy’: Used for numerical operations (e.g. choosing random objects)
 -	‘threading’: Manage threads, allowing video playback in parallel with the main program
 -	‘YOLO’ (Ultralytics): The pretrained model for real-time object detection. This program uses the ‘yolov8n.pt’ model
+
 MEMORYGAME CLASS:
 -	The ‘MemoryGame’ class initialises the YOLO model for object detection and sets the confidence threshold, this being the parameter that determines the minimum confidence level required for the model to consider a detection valid. This threshold helps filter out low-confidence detections, reducing false positives and ensuring that only more certain detections are used. The initialisation also opens a video capture using the webcam on the device (laptop/PC) and sets up the GUI window with control buttons
+
 GUI COMPONENTS:
 -	‘self.root’: Main application window
 -	‘self.video_frame’: A ‘tkinter’ frame used to display the video feed
 -	‘self.control_frame’: Contains control buttons for interacting with the game modes
+
 MODES AND ACTIONS:
 -	Modes:
   o	Welcome: Default mode when the program starts, waiting for the user to select a mode
@@ -30,11 +34,13 @@ MODES AND ACTIONS:
   o	Quit Button: Exits the application
   o	Skip Button: Skips the current object in game mode and selects a new one
   o	Show Text Button: Toggles hints on and off during game mode
+
 OBJECT LEARNING AND GAME LOGIC:
 -	Object Detection (‘predict’ method): Uses YOLO to detect objects in the video feed
 -	Learning Objects: Detected objects (excludes ‘person’) are added to ‘learned_objects’
 -	Video Playback (‘play_video’ method): Plays a video associated with a learned object if it exists
 -	Game Mode: The program randomly selects a learned object for the user to identify, and if the object is correct the score increases
+
 HELPER METHODS:
 -	‘resize_window_proportionately’: Resizes the window based on the aspect ratio
 -	‘toggle_show_text’ and ‘update_hint_button_text’: Manage hint visibility
