@@ -5,7 +5,7 @@ The Magic Mirror is designed to identify objects in real-time and provide the us
 
 Note: This project relies on videos from https://www.nzsl.nz/. These were compared to signs from https://auslan.org.au/ to ensure that the signs are used in AUSLAN. These videos could not be uploaded on GitHub and so to use this application, you can download the videos and save them to a file called ‘video_anz’. Ensure the name of the videos are the name of the object that they are connected to. For example, if the object is a bottle the name of the corresponding video would be ‘bottle’.
 
-My work is based off of an initial prototype created by another student, Tom Desrumeaux. His prototype has been included in this repository to keep a record of the progression of the application.
+My work is based off of an initial prototype created by another student, Tom Desrumeaux. His prototype has been included in this repository to keep a record of the progression of the application. There were 7 iterations of my prototype for the Magic Mirror, but I have only uploaded the initial and the final prototypes I created. The working prototype is called 'hebe final prototype.py'.
 
 UNDERSTANDING THE COMPONENTS
 
