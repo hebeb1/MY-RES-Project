@@ -25,15 +25,15 @@ GUI COMPONENTS:
 
 MODES AND ACTIONS:
 -	Modes:
-  o	Welcome: Default mode when the program starts, waiting for the user to select a mode
-  o	Learning Mode: The program detects and learns objects from the webcam feed
-  o	Game Mode: The user must identify previously learned objects 
+  - Welcome: Default mode when the program starts, waiting for the user to select a mode
+  - Learning Mode: The program detects and learns objects from the webcam feed
+  - Game Mode: The user must identify previously learned objects 
 -	Buttons:
-  o	Learn Button: Switches to learning mode
-  o	Game Button: Switches to game mode if there are learned objects
-  o	Quit Button: Exits the application
-  o	Skip Button: Skips the current object in game mode and selects a new one
-  o	Show Text Button: Toggles hints on and off during game mode
+  - Learn Button: Switches to learning mode
+  - Game Button: Switches to game mode if there are learned objects
+  - Quit Button: Exits the application
+  - Skip Button: Skips the current object in game mode and selects a new one
+  - Show Text Button: Toggles hints on and off during game mode
 
 OBJECT LEARNING AND GAME LOGIC:
 -	Object Detection (‘predict’ method): Uses YOLO to detect objects in the video feed
