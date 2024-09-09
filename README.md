@@ -3,6 +3,8 @@ This is a Magic Mirror prototype as part of the Mid-Year Research Program 2024 a
 
 The Magic Mirror is designed to identify objects in real-time and provide the user with the respective AUSLAN sign, with the aim to help users to learn AUSLAN. The application opens with a ‘Welcome’ page, where the user can see themselves and then they can move into either ‘Learning’ or ‘Game’ mode by pressing on the corresponding button. In ‘Learning’ mode, the user can hold up an object to the camera, it will be identified, and then a video of the AUSLAN sign for the object will overlay on the live feed. Each object that is learnt will be listed on the left-hand side of the screen. In ‘Game’ mode, the AUSLAN sign will again be played over the live feed, and then the user can hold up the correct object to win points. The user can toggle ‘Hints on’ or ‘Hints off’ depending on whether they want the word of the object to be displayed or not, and there is also a ‘Skip’ button that allows the user to skip that object. The signs used in this prototype are in the ‘videos_anz’ folder.
 
+Note: This project relies on videos from https://www.nzsl.nz/. These were compared to signs from https://auslan.org.au/ to ensure that the signs are used in AUSLAN. These videos could not be uploaded on GitHub and so to use this application, you can download the videos and save them to a file called ‘video_anz’. Ensure the name of the videos are the name of the object that they are connected to. For example, if the object is a bottle the name of the corresponding video would be ‘bottle’.
+
 My work is based off of an initial prototype created by another student, Tom Desrumeaux. His prototype has been included in this repository to keep a record of the progression of the application.
 
 UNDERSTANDING THE COMPONENTS
@@ -46,3 +48,5 @@ HELPER METHODS:
 -	‘toggle_show_text’ and ‘update_hint_button_text’: Manage hint visibility
 -	‘choose_next_object’: Selects the next object to be identified in game mode
 -	‘skip_object’: Allows the user to skip the current object
+
+***Please see the 'my-res final documentation' file for more information.
